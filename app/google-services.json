@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "84126116067",
+    "firebase_url": "https://travelman-6bcfa.firebaseio.com",
+    "project_id": "travelman-6bcfa",
+    "storage_bucket": "travelman-6bcfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84126116067:android:a2e7293a2019f9a4",
+        "android_client_info": {
+          "package_name": "com.example.travelman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84126116067-coe2cr1gogf6nddqhdgg4ogdo4e2j4ui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelman",
+            "certificate_hash": "87dff61708e72b9c24fdfc884c39b7b4a7c8fc24"
+          }
+        },
+        {
+          "client_id": "84126116067-h5eroh9h5kejp28gib71urfqjppeb0kk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI6Kxsfm8twtE0jqi3fwxdx_wmLQ-G2PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84126116067-h5eroh9h5kejp28gib71urfqjppeb0kk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
