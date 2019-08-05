@@ -36,6 +36,9 @@ public class ListActivity extends AppCompatActivity {
 
     }
 
+
+
+
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
 
@@ -97,6 +100,7 @@ public class ListActivity extends AppCompatActivity {
                 new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvDeals.setLayoutManager(dealsLayoutManager);
         FirebaseUtil.attachListener();
+
     }
 
     public void showMenu(){

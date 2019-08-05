@@ -2,6 +2,7 @@ package com.example.travelman;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,7 +19,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.firebase.ui.auth.data.model.Resource;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -107,11 +107,13 @@ public class DealActivity extends AppCompatActivity {
             menu.findItem(R.id.delete_menu).setVisible(true);
             menu.findItem(R.id.save_menu).setVisible(true);
             enableEditTexts(true);
+            EnableImageUpload();
         }
         else {
             menu.findItem(R.id.delete_menu).setVisible(false);
             menu.findItem(R.id.save_menu).setVisible(false);
             enableEditTexts(false);
+            disableImageUpload();
         }
 
         return true;
@@ -217,7 +219,20 @@ public class DealActivity extends AppCompatActivity {
         txtTitle.setEnabled(isEnabled);
         txtDescription.setEnabled(isEnabled);
         txtPrice.setEnabled(isEnabled);
+
     }
+
+    private void disableImageUpload(){
+        Button ImgUpload = findViewById(R.id.btn_Image);
+        ImgUpload.setVisibility(View.INVISIBLE);
+    }
+
+    private void EnableImageUpload(){
+        Button ImgUpload = findViewById(R.id.btn_Image);
+        ImgUpload.setVisibility(View.VISIBLE);
+    }
+
+
 
     private void showImage(String url){
         if (url != null && url.isEmpty() == false) {
